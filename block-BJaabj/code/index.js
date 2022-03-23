@@ -92,7 +92,7 @@ function isLeapYear ()
 
   - Prompts a message saying `Enter a number` and store the value into variable named`number`
   - Alert `The factorial of [number] is [factorial]`
-
+f
 */
 
 function getFactorial ()
