@@ -2,6 +2,10 @@
 1. Create a function named `sayHello` that that accepts a parameter `name` and alert `Hello [name]!`.
 */
 
+function sayHello(name) 
+{
+return alert(`Hello ${name}`);
+}
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
 fullName.
@@ -10,6 +14,11 @@ Example:
   getFullName("John", "Snow"); // "John Snow"
   getFullName("Nelson", "Mandela"); // "Nelson Mandela"
 */
+
+function getFullName (firstName, lastName)
+{
+ return console.log(firstName +` `+ lastName);
+}
 
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
@@ -20,6 +29,16 @@ addTwoNumbers(10, 22); // 32
 addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
+
+function addTwoNumbers (firstNum, secondNum)
+{
+let sum = (firstNum+secondNum);
+
+  if (isNaN(sum))
+  return console.log(`please enter a valid number.`);
+  else
+  return console.log(sum);
+}
 
 /*
 4. Create a function named `calc` which accepts three parameter `numA`, `numB` and `operation`. Operation
@@ -33,6 +52,22 @@ calc(20, 10, 'sub'); // 10
 calc(20, 10, 'mul'); // 200
 */
 
+function calc (numA,numB,operation)
+{
+  switch(operation)
+  {
+    case (`add`): console.log(`the sum of two numbers is ${numA+numB}`) ;
+    break ;
+    case (`subtract`): console.log(`the subtracted amount is ${numA-numB}`);
+    break;
+    case (`multiply`): console.log(`the multipled amount is ${numA*numB}`);
+    break;
+    case (`divide`): console.log(`the divided amount is ${numA/numB}`);
+    break;
+    default: console.log(`Kindly enter a valid operation`);
+  }
+  if(isNaN(numA||numB)) console.log(`kindly enter a valid number.`)
+}
 
 /*
 5. Create a function named `isLeapYear` that accepts a number data type and return `true` or `false` based
@@ -42,7 +77,23 @@ isLeapYear(2000); // true
 isLeapYear(2001); // false
 */
 
+function isLeapYear (year)
+{
+if (year%4==0)console.log(`${year} is a leap year .`);
+else if (year%100==0 && year%400==0) console.log(`${year} is a leap year .`);
+else if (year%100==0 && year%0 !==0) console.log(`${year} is not a leap year.`);
+}
 
 /*
 6. Create a function named `getFactorial` that accepts a number and return the factorial of the number.
 */
+
+function getFactorial (number)
+{
+  let final = 1;
+  for(let i = number;i>=1;i--)
+  {
+    final*=i;
+  }
+  console.log(final);
+}
