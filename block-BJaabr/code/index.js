@@ -1,4 +1,4 @@
-// -ook at the example below and do the same for other problems.
+// Look at the example below and do the same for other problems.
 
 /*
 Write a function named convertToString that accepts a number and converts the number into a string (hint: use String()) and return the converted value.
@@ -22,7 +22,7 @@ let convertToString = (n) => String(n);
 // - Write an Arrow Function with curly brackets
 let convertToString = (n) => {
   return String(n);
-};
+}
 
 // - Execute the function
 convertToString(21);
@@ -31,7 +31,8 @@ convertToString(21);
 let returnValue = convertToString(23);
 
 // - What is the typeof returnValue
-// typeof returnValue is "string"
+
+ 'string'
 
 /* 1. Add one to the given value
 
@@ -40,19 +41,41 @@ Write a function named `addOne` that accepts a number, adds one to the given val
 Do the following with above problem.
 */
 
+function addOne (num)
+{
+  return (num +1) ;
+}
+
 // - Write a Function Declaration
+
+function dandy (num)
+{
+  return (num*num);
+}
 
 // - Write a Function Expression
 
+dandy(3);
+
 // - Write an Arrow Function without curly brackets(if possible)
+
+let dandy = (num) => (num * num); 
 
 // - Write an Arrow Function with curly brackets
 
+/* ITS A TRICK QUESTION , AS CURLY BRACKETS WILL FOR A BLOCK , AND return needs to be typed.*/ 
+
 // - Execute the function
+
+dandy(3);
 
 // - Execute the function and store the return value in a variable.
 
+var squeer = dandy(3);
+
 // - What is the typeof returnValue
+
+Number
 
 /* 2. Subtract one
 
