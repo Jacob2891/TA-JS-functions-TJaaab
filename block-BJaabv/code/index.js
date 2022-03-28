@@ -8,8 +8,9 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+function calculateDogAge(age,doggAge) {
+  let dogAge = (age*doggAge) ;
+  return (`you dog is ${dogAge} years old .`) ;
 }
 
 /*
@@ -19,8 +20,12 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
-  // Your code goes here
+function calculateMoviesToWatch(age,freqency) 
+{
+const maxAge = 100 ;
+let moviePerYear = (freqency * 4) * 12 ;
+let remainingAge = maxAge - age ;
+return (`The total number of movies youll watch is ${remainingAge * moviePerYear}.`);
 }
 
 /*
@@ -29,8 +34,10 @@ function calculateMoviesToWatch() {
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function celsiusToFahrenheit(temp) 
+{
+   let fahrenheit = (temp * 33.8);
+   return (`${temp}°C converts into ${fahrenheit}°F`) ;
 }
 
 /*
@@ -39,8 +46,10 @@ function celsiusToFahrenheit() {
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function fahrenheitToCelsius(temp) 
+{
+  let celcius = (temp * 2) + 30 ;
+  return (`${temp}°F converts into ${celcius}°C`) ;
 }
 
 /*
@@ -51,8 +60,10 @@ function celsiusToFahrenheit() {
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-function pow() {
-  // Your code goes here
+function pow(n,x) 
+{
+ let squared = 1 ;
+ 
 }
 
 // Test
@@ -66,8 +77,10 @@ pow(-31, 2); // "The number below 1 is not allowed"
 and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
 */
 
-function sumOrProductOfN() {
-  // Your code goes here
+function sumOrProductOfN(num,str,operation) 
+{
+  if (operation = `+`) 
+  return 
 }
 
 sumOrProductOfN(4, 'sum'); // 10
@@ -103,6 +116,7 @@ min(0, -10);
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
 
-function typeCheck() {
-  // Your code goes here
+function typeCheck(enter) 
+{
+  return typeof(enter);
 }
