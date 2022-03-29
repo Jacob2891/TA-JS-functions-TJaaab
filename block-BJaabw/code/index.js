@@ -11,10 +11,12 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(mins) {
+  return (`${mins} minutes has ${mins * 60} seconds .`) ;
 }
 // - Execute the function with required parameter
+
+minToSec(3);
 
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
@@ -25,12 +27,19 @@ isInRange(1, 20, 9); // true
 isInRange(1, 10, 19); // false
 */
 
+function isInRange (lower,upper,number){
+  if (number >=lower && number <=upper)
+  return (`true`)
+  else
+  return (`false`);
+}
+
 // - Write a Function Decleration for above problem
 function isInRange() {
-  // Your code
+ (` ditto as above `)
 }
 // - Execute the function with required parameter
-
+isInRange(1,10,8);
 /* 2. calculateBMI
 
 
@@ -49,10 +58,21 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
-}
+let bmi = (weight,height) =>  (weight / height * height)
 
+  switch(bmi)
+  {
+    case bmi<18.5 :console.log(`you are Underweight`);
+    break;
+    case bmi>=18.5 && bmi<=24.9 :console.log(`you are of Normal Weight`);
+    break;
+    case bmi>=25 && bmi<=29.9 :console.log(`you are Overweight`);
+    break;
+    case bmi>= 30 :console.log(`you are Obese`);
+    break;
+    default: console.log(`Kindly enter a valid weight .`); 
+  }
+ 
 /* 3. appropiateDrinks
 
 Create a function that take the age are return the appropiate drink based on these conditions:
@@ -64,8 +84,12 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
-  // Your code
+function appropiateDrinks(age) {
+ if(age<14) console.log(`drink juice`);
+ else if(age>=14 && age<18) console.log(`drink Soda`);
+ else if(age>=18 && age<21) console.log(`drink fruit-flavored beer`);
+ else if(age>=21) console.log(`drink throat-piercing vodka`);
+ else (`enter a valid age`);
 }
 
 /* 4. Add two numers or string
@@ -79,8 +103,8 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
-  // Your code
+function sum(num1,num2) {
+  
 }
 
 // Function Test
